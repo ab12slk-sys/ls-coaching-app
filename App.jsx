@@ -35,16 +35,16 @@ const App = () => {
   const userData = {
     name: "Lică Sinc",
     initials: "LS",
-    role: "Președinte Sebeșul Aleargă",
+    role: "Președinte Sebeșul Aleargă", "UESCA Coach",
     location: "Sebeș, RO",
-    stats: { age: 37, height: 186, weight: 75, restingHR: 50 },
+    stats: { age: 37, height: 186, weight: 75, restingHR: 47 },
     personalBests: [
-      { distance: "5K", time: "19:45" },
-      { distance: "10K", time: "41:20" }
+      { distance: "5K", time: "18:03" },
+      { distance: "10K", time: "38:08" }
     ],
     medals: [
       { id: 1, name: "Fondator", icon: "🏆", color: "bg-[#f4a32e]/10 text-[#f4a32e]" },
-      { id: 2, name: "Zlatna Finisher", icon: "⛰️", color: "bg-[#737373]/20 text-[#ffffff]" }
+      { id: 2, name: "Ultramarathon Finisher", icon: "⛰️", color: "bg-[#737373]/20 text-[#ffffff]" }
     ]
   };
 
@@ -94,12 +94,12 @@ const App = () => {
       },
       {
         title: "COMUNITATE LOCALĂ",
-        desc: "Acces direct la evenimentele asociației Sebeșul Aleargă din Alba.",
+        desc: "Acces direct la evenimentele Asociației Sebeșul Aleargă.",
         icon: <Users className="w-16 h-16 text-[#f4a32e]" />
       },
       {
-        title: "FEEDBACK DIGITAL",
-        desc: "Monitorizare puls Karvonen și feedback de la propriul tău AI Coach.",
+        title: "FEEDBACK",
+        desc: "Monitorizare și feedback de la propriul tău Coach.",
         icon: <ShieldCheck className="w-16 h-16 text-[#f4a32e]" />
       }
     ];
@@ -200,7 +200,7 @@ const App = () => {
             <MessageSquare size={20} />
           </div>
           <div className="space-y-1">
-            <h4 className="text-[10px] font-black text-[#f4a32e] uppercase tracking-[0.3em]">LS AI Insights</h4>
+            <h4 className="text-[10px] font-black text-[#f4a32e] uppercase tracking-[0.3em]">LS Insights</h4>
             <p className="text-sm text-white leading-relaxed font-semibold italic">
               "Recuperarea a fost optimă. Astăzi te poți concentra pe tehnică în Zona 2. Menține cadența!"
             </p>

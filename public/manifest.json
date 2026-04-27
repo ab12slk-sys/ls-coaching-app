@@ -7,9 +7,9 @@
   "theme_color": "#2c2b2b",
   "icons": [
     {
-      "src": "[https://www.iconpacks.net/icons/2/free-settings-icon-2053-thumb.png](https://www.iconpacks.net/icons/2/free-settings-icon-2053-thumb.png)",
+      "src": "/logo.jpeg",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/jpeg",
       "purpose": "any maskable"
     }
   ]

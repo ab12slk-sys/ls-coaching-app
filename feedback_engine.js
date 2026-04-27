@@ -1,6 +1,6 @@
 /**
  * LS Coaching - Feedback Engine (v1.0)
- * Acest modul generează mesaje personalizate de la "LS AI Coach"
+ * Acest modul generează mesaje personalizate de la "LS Coach"
  * bazate pe performanța reală versus planificarea UESCA.
  */
 
@@ -40,7 +40,7 @@ function generateAIFeedback(workoutData, targetZone) {
   const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
   return {
-    coachName: "LS AI Coach",
+    coachName: "LS Coach",
     message: randomMessage,
     status: category,
     timestamp: new Date().toISOString()

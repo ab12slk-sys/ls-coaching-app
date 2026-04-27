@@ -1,0 +1,20 @@
+{
+  "name": "LS Coaching App",
+  "short_name": "LS Coaching",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2c2b2b",
+  "theme_color": "#2c2b2b",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+"profile_version": "1.0",
+"app_id": "LS-COACHING-2027",
+"user_profile": {
+"personal_data": {
+"full_name": "String",
+"birth_date": "ISO8601_Date",
+"gender": ["Male", "Female", "Prefer not to say"],
+"weight_kg": "Number",
+"height_cm": "Number",
+"location": "String (Sebeș, RO etc.)"
+},
+"running_history": {
+"experience_level": ["Beginner", "Intermediate", "Advanced"],
+"years_active": "Number",
+"avg_weekly_km_last_month": "Number",
+"longest_run_3_months_km": "Number",
+"personal_bests": {
+"5k": "Time (optional)",
+"10k": "Time (optional)",
+"half_marathon": "Time (optional)",
+"marathon": "Time (optional)"
+}
+},
+"physiology": {
+"resting_heart_rate": "Number (BPM)",
+"max_heart_rate": {
+"value": "Number (BPM)",
+"method": ["Estimated", "Lab Tested", "Field Tested"]
+},
+"hr_zones_calculation": ["Karvonen", "LTHR", "MaxHR_Percentage"]
+},
+"objectives": {
+"primary_goal": ["Health & Weight Loss", "First 5K", "Personal Best", "Ultramarathon", "Stress Management"],
+"target_event_date": "Date (optional)",
+"available_days_per_week": "Number (1-7)",
+"preferred_training_time": ["Morning", "Afternoon", "Evening"]
+},
+"safety_par_q": {
+"heart_condition": "Boolean",
+"chest_pain_activity": "Boolean",
+"loss_of_balance_dizziness": "Boolean",
+"bone_joint_problem": "Boolean",
+"blood_pressure_medication": "Boolean",
+"other_medical_reasons": "Boolean"
+},
+"account_status": {
+"tier": ["Free_Trial", "Standard", "Premium"],
+"trial_start_date": "Date",
+"is_active": "Boolean"
+}
+}
+}

@@ -2,28 +2,38 @@
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
-    <!-- TAG-URI MAGICE PENTRU APLICAȚIE NATIVĂ (PWA) -->
+    
+    <!-- SETĂRI APLICAȚIE NATIVĂ (PWA) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#2c2b2b" />
-    
-    <!-- FORȚEAZĂ ASCUNDEREA BROWSERULUI PE iOS (IPHONE) -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="LS Coaching" />
-    
-    <!-- FORȚEAZĂ ASCUNDEREA BROWSERULUI PE ANDROID -->
     <meta name="mobile-web-app-capable" content="yes" />
 
-    <link rel="icon" type="image/svg+xml" href="/assets/logo.png" />
+    <link rel="icon" type="image/png" href="/assets/logo.png" />
     <link rel="apple-touch-icon" href="/assets/logo.png" />
+    
+    <!-- LINK CĂTRE MANIFEST -->
     <link rel="manifest" href="/manifest.json" />
     
-    <title>LS Coaching - Science of Endurance</title>
+    <title>LS Coaching</title>
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
   </head>
   <body class="bg-[#2c2b2b] text-white">
     <div id="root"></div>
     <script type="module" src="/main.jsx"></script>
+    
+    <!-- SCRIPT PORNIRE SERVICE WORKER -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('Service Worker înregistrat cu succes!', reg.scope))
+            .catch(err => console.log('Eroare Service Worker:', err));
+        });
+      }
+    </script>
   </body>
 </html>
